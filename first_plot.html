@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Static HTML file</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="a5b3df8c-cfba-4c73-9673-09bfc4460db5" data-root-id="1938"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2268">
+          {"a92a7cba-2cc9-478d-9b44-4cae7d658875":{"roots":{"references":[{"attributes":{"below":[{"id":"1949"}],"center":[{"id":"1952"},{"id":"1956"},{"id":"1984"}],"left":[{"id":"1953"}],"renderers":[{"id":"1974"}],"title":{"id":"1939"},"toolbar":{"id":"1964"},"x_range":{"id":"1941"},"x_scale":{"id":"1945"},"y_range":{"id":"1943"},"y_scale":{"id":"1947"}},"id":"1938","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1978","type":"BasicTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1963","type":"BoxAnnotation"},{"attributes":{},"id":"1980","type":"BasicTickFormatter"},{"attributes":{},"id":"1961","type":"ResetTool"},{"attributes":{"axis_label":"x","formatter":{"id":"1980"},"ticker":{"id":"1950"}},"id":"1949","type":"LinearAxis"},{"attributes":{},"id":"1960","type":"SaveTool"},{"attributes":{},"id":"1947","type":"LinearScale"},{"attributes":{"data":{"x":[-148,-147,-140,-100,-75,0],"y":[52,51,50,25,30,-50]},"selected":{"id":"1983"},"selection_policy":{"id":"1982"}},"id":"1971","type":"ColumnDataSource"},{"attributes":{},"id":"1957","type":"PanTool"},{"attributes":{},"id":"1945","type":"LinearScale"},{"attributes":{"data_source":{"id":"1971"},"glyph":{"id":"1972"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1973"},"selection_glyph":null,"view":{"id":"1975"}},"id":"1974","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Temp."},"renderers":[{"id":"1974"}]},"id":"1985","type":"LegendItem"},{"attributes":{"source":{"id":"1971"}},"id":"1975","type":"CDSView"},{"attributes":{"text":"Gay, Lesbian, and Vampire Books (Bokeh) looking at boy and eye words"},"id":"1939","type":"Title"},{"attributes":{"axis":{"id":"1953"},"dimension":1,"ticker":null},"id":"1956","type":"Grid"},{"attributes":{"overlay":{"id":"1963"}},"id":"1959","type":"BoxZoomTool"},{"attributes":{"line_color":"#1f77b4","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1972","type":"Line"},{"attributes":{},"id":"1941","type":"DataRange1d"},{"attributes":{},"id":"1958","type":"WheelZoomTool"},{"attributes":{},"id":"1982","type":"UnionRenderers"},{"attributes":{},"id":"1954","type":"BasicTicker"},{"attributes":{"axis_label":"y","formatter":{"id":"1978"},"ticker":{"id":"1954"}},"id":"1953","type":"LinearAxis"},{"attributes":{},"id":"1943","type":"DataRange1d"},{"attributes":{},"id":"1983","type":"Selection"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"1973","type":"Line"},{"attributes":{},"id":"1962","type":"HelpTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1957"},{"id":"1958"},{"id":"1959"},{"id":"1960"},{"id":"1961"},{"id":"1962"}]},"id":"1964","type":"Toolbar"},{"attributes":{},"id":"1950","type":"BasicTicker"},{"attributes":{"items":[{"id":"1985"}]},"id":"1984","type":"Legend"},{"attributes":{"axis":{"id":"1949"},"ticker":null},"id":"1952","type":"Grid"}],"root_ids":["1938"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2268').textContent;
+                  var render_items = [{"docid":"a92a7cba-2cc9-478d-9b44-4cae7d658875","root_ids":["1938"],"roots":{"1938":"a5b3df8c-cfba-4c73-9673-09bfc4460db5"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
